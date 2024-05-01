@@ -1,0 +1,39 @@
+<mvc:View controllerName="com.employee.employee.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <l:Grid defaultSpan="L12 M12 S12" class="sapUiSmallMarginTop">
+							<l:content>
+                            <Table class="reportTable" headerText="Employee table" id="reportTableId" 
+		items="{path: 'empModel>/Employee'}"
+					updateFinished="onTableUpdate">
+                    <columns>
+										<Column id="idnotNum">
+											<Label text="ID" design="Bold"/>
+										</Column>
+                                        <Column id="idnotNum1">
+											<Label text="Name" design="Bold"/>
+										</Column>
+                                        <Column id="idnotNum2">
+											<Label text="Salary" design="Bold"/>
+										</Column>
+                                        <Column id="idnotNum3">
+											<Label text="Location" design="Bold"/>
+										</Column>
+                                        </columns>
+                                        <items>
+						<ColumnListItem>
+                         <Text text="{empModel>id}"></Text>
+												<Text text="{empModel>Name}"></Text>
+												<Text text="{empModel>Salary}"></Text>
+												<Text text="{empModel>Location}"></Text>
+                            </ColumnListItem>
+                               </items>
+                    </Table>
+                          </l:content>
+                            </l:Grid>
+        </content>
+    </Page>
+</mvc:View>
