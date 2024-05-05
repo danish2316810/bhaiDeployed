@@ -1,0 +1,25 @@
+{
+  "role": {
+    "name": "donor#",
+    "object_privileges": [
+      {
+        "name": "APP_INTERACTIONS_EMPLOYEE",
+        "type": "TABLE",
+        "privileges_with_grant_option": [
+          "DELETE",
+          "INSERT",
+          "SELECT"
+        ]
+      }
+    ],
+    "schema_privileges": [
+      {
+        "privileges": [
+          "SELECT",
+          "INSERT",
+          "DELETE"
+        ]
+      }
+    ]
+  }
+}
